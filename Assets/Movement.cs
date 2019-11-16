@@ -19,7 +19,7 @@ public class Movement : MonoBehaviour
         float moveX = Input.GetAxis("Horizontal");
         float moveY = Input.GetAxis("Vertical");
         
-        MoveCube(moveX,moveY, Time.deltaTime * 5.0f);
+        MoveCube(moveX,moveY, Time.deltaTime * 35.0f);
 
     }
 

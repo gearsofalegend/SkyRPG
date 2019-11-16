@@ -29,8 +29,24 @@ public class Test : MonoBehaviour
         
         if (Input.GetKey(KeyCode.Space))
         {
-            rb.AddRelativeForce(Vector3.up * 20, ForceMode.Force);
+            rb.AddRelativeForce(Vector3.up * 25, ForceMode.Force);
+            
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.useGravity = false;
+            rb.mass = 1;
+        }
+        
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            rb.useGravity = true;
+            rb.mass = 5;
+        }
+        
+        
+        
 
         if (Input.GetKeyDown(KeyCode.J))
         {
@@ -40,7 +56,7 @@ public class Test : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.K))
         {
-            rb.AddRelativeForce(Vector3.back, ForceMode.VelocityChange);
+            rb.AddRelativeForce(Vector3.forward *2, ForceMode.VelocityChange);
         } 
         
         if (Input.GetKeyDown(KeyCode.M))
