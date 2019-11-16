@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class Canon : MonoBehaviour
 {
+    //the location of the shooting 
+    public GameObject missilePrefab;
+    public Transform missileSpawn;
+   // public int interval;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        InvokeRepeating	("spawnMissile",1,1);
     }
 
     // Update is called once per frame
     void Update()
     {
+      
+    }
+
+
+
+    void spawnMissile()
+    {
+
+        Instantiate(missilePrefab, missileSpawn.position, Quaternion.identity	);
+        
         
     }
 }

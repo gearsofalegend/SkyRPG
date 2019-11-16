@@ -54,7 +54,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5101927454532165528}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1816.08, y: 3195.66, z: -9696.002}
   m_LocalScale: {x: 3.021, y: 3.021, z: 3.021}
   m_Children:
@@ -77,6 +77,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dee068a3c0497e745a7f34ebfe28b11f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  missilePrefab: {fileID: 2656053272867872531, guid: 34e1463c6c19efa4aa429efc9dc645c7,
+    type: 3}
+  missileSpawn: {fileID: 5101927454511792780}
 --- !u!1 &5101927454545163580
 GameObject:
   m_ObjectHideFlags: 0

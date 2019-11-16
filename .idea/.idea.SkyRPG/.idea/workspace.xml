@@ -3,140 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c559d919-8458-4a16-8184-42932656bb19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyRPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyRPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/glare-star-sparkling.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/glare-star-sparkling.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/plasmaball.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/plasmaball.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/texture_test.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/texture_test.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Movement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TransparentTrigger.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TransparentTrigger.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Models.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_fuku.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_fuku.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_fuku_ds.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_fuku_ds.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hada.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hada.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hair_ds.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hair_ds.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Animations.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Animations/SD_unitychan_motion_humanoid.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Animations/SD_unitychan_motion_humanoid.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Animations/SD_unitychan_motion_humanoid.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Animations/SD_unitychan_motion_humanoid.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/angry@sd_hmd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/angry@sd_hmd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/confuse@sd_hmd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/confuse@sd_hmd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/damaged@sd_hmd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/damaged@sd_hmd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/default@sd_hmd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/default@sd_hmd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/eye_close@sd_hmd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/eye_close@sd_hmd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/mth_L@sd_hmd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/mth_L@sd_hmd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/mth_R@sd_hmd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/mth_R@sd_hmd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/mth_a@sd_hmd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/mth_a@sd_hmd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/mth_e@sd_hmd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/mth_e@sd_hmd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/mth_i@sd_hmd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/mth_i@sd_hmd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/mth_o@sd_hmd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/mth_o@sd_hmd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/mth_u@sd_hmd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/mth_u@sd_hmd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/relux@sd_hmd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/relux@sd_hmd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/sad@sd_hmd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/sad@sd_hmd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/scold@sd_hmd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/scold@sd_hmd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/smile2@sd_hmd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/smile2@sd_hmd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/smile@sd_hmd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/smile@sd_hmd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/strain@sd_hmd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/strain@sd_hmd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/surprise@sd_hmd.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/Humanoid/surprise@sd_hmd.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/_faceOnly.mask" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/FaceAnimations/_faceOnly.mask.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Materials/def_mat.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Materials/def_mat.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Materials/hair_mat.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Materials/hair_mat.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Materials/mouth_mat.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Materials/mouth_mat.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Materials/nol_mat.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Materials/nol_mat.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Materials/skin_mat.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Materials/skin_mat.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/SD_unitychan_humanoid.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/SD_unitychan_humanoid.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Textures/ENV2.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Textures/ENV2.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Textures/FO_CLOTH1.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Textures/FO_CLOTH1.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Textures/FO_RIM1.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Textures/FO_RIM1.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Textures/FO_SKIN1.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Textures/FO_SKIN1.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Textures/utc_all2.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Textures/utc_all2.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Textures/utc_nomal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Textures/utc_nomal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Textures/utc_spec.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Models/Textures/utc_spec.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Prefabs/SD_unitychan_humanoid.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/SD_unitychan/Prefabs/SD_unitychan_humanoid.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/AutoBlink.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/AutoBlink.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/AutoBlinkforSD.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/AutoBlinkforSD.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/CameraController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/CameraController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/FaceUpdate.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/FaceUpdate.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/IKCtrlRightHand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/IKCtrlRightHand.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/IKLookAt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/IKLookAt.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/IdleChanger.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/IdleChanger.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/RandomWind.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/RandomWind.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/SpringBone.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/SpringBone.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/SpringCollider.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/SpringCollider.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/SpringManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/SpringManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/ThirdPersonCamera.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/ThirdPersonCamera.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/UnityChanControlScriptWithRgidBody.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityChan/Scripts/UnityChanControlScriptWithRgidBody.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Canon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Canon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Missile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Missile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canon.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gym1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gym1.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -177,13 +47,78 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Missile.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <state relative-caret-position="360">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding>
-                <marker date="1573873599919" expanded="false" signature="6:78" ph="..." />
-                <marker date="1573873599919" expanded="true" signature="116:290" ph="{...}" />
-                <marker date="1573873599919" expanded="true" signature="188:209" ph="{...}" />
-                <marker date="1573873599919" expanded="true" signature="267:288" ph="{...}" />
+                <marker date="1573881266512" expanded="false" signature="6:78" ph="..." />
+                <marker date="1573881266512" expanded="true" signature="116:742" ph="{...}" />
+                <marker date="1573881266512" expanded="true" signature="219:282" ph="{...}" />
+                <marker date="1573881266512" expanded="true" signature="340:740" ph="{...}" />
+                <marker date="1573881266512" expanded="true" signature="355:428" ph="/* int temp = 1; ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/EnergyBall(Kamehameha).prefab">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-10">
+              <caret line="2786" column="30" lean-forward="true" selection-start-line="2786" selection-start-column="30" selection-end-line="2786" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Canon.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
+              <folding>
+                <marker date="1573881413175" expanded="false" signature="6:78" ph="..." />
+                <marker date="1573881413175" expanded="true" signature="114:602" ph="{...}" />
+                <marker date="1573881413175" expanded="true" signature="228:309" ph="/* public int interval; ... */" />
+                <marker date="1573881413175" expanded="true" signature="326:384" ph="{...}" />
+                <marker date="1573881413175" expanded="true" signature="442:461" ph="{...}" />
+                <marker date="1573881413175" expanded="true" signature="488:600" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/0f/69c9f98c/Quaternion.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1044">
+              <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/43/c668e3a3/MonoBehaviour.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/TcpClientConnection.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="523">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+              <folding>
+                <marker date="1573454498257" expanded="false" signature="6:154" ph="..." />
+                <marker date="1573454498257" expanded="true" signature="188:2054" ph="{...}" />
+                <marker date="1573454498257" expanded="true" signature="363:412" ph="{...}" />
+                <marker date="1573454498257" expanded="true" signature="445:1265" ph="{...}" />
+                <marker date="1573454498257" expanded="true" signature="498:1107" ph="{...}" />
+                <marker date="1573454498257" expanded="true" signature="1143:1240" ph="{...}" />
+                <marker date="1573454498257" expanded="true" signature="1340:1493" ph="{...}" />
+                <marker date="1573454498257" expanded="true" signature="1530:1955" ph="{...}" />
+                <marker date="1573454498257" expanded="true" signature="1998:2052" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -227,35 +162,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scenes/ArtProjectScene.unity">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Canon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TcpClientConnection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/ArtProjectScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Missile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/EnergyBall(Kamehameha).prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ThirdPersonCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/43/c668e3a3/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/0f/69c9f98c/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Missile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Canon.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="128" />
-    <option name="y" value="662" />
+    <option name="x" value="24" />
+    <option name="y" value="270" />
     <option name="width" value="1235" />
     <option name="height" value="745" />
   </component>
@@ -347,7 +284,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5410000" />
+    <option name="totallyTimeSpent" value="7090000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -359,10 +296,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-193" y="470" width="1235" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22541603" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25361702" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -443,6 +380,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/TcpClientConnection.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <marker date="1573454498257" expanded="false" signature="6:154" ph="..." />
+            <marker date="1573454498257" expanded="true" signature="188:2054" ph="{...}" />
+            <marker date="1573454498257" expanded="true" signature="363:412" ph="{...}" />
+            <marker date="1573454498257" expanded="true" signature="445:1265" ph="{...}" />
+            <marker date="1573454498257" expanded="true" signature="498:1107" ph="{...}" />
+            <marker date="1573454498257" expanded="true" signature="1143:1240" ph="{...}" />
+            <marker date="1573454498257" expanded="true" signature="1340:1493" ph="{...}" />
+            <marker date="1573454498257" expanded="true" signature="1530:1955" ph="{...}" />
+            <marker date="1573454498257" expanded="true" signature="1998:2052" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/EnergyBall(Kamehameha).prefab">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="2786" column="30" lean-forward="true" selection-start-line="2786" selection-start-column="30" selection-end-line="2786" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/43/c668e3a3/MonoBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Test.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -469,15 +438,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Canon.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
+          <folding>
+            <marker date="1573881413175" expanded="false" signature="6:78" ph="..." />
+            <marker date="1573881413175" expanded="true" signature="114:602" ph="{...}" />
+            <marker date="1573881413175" expanded="true" signature="228:309" ph="/* public int interval; ... */" />
+            <marker date="1573881413175" expanded="true" signature="326:384" ph="{...}" />
+            <marker date="1573881413175" expanded="true" signature="442:461" ph="{...}" />
+            <marker date="1573881413175" expanded="true" signature="488:600" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ArtProjectScene.unity">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/0f/69c9f98c/Quaternion.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1044">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Missile.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="360">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
-            <marker date="1573873599919" expanded="false" signature="6:78" ph="..." />
-            <marker date="1573873599919" expanded="true" signature="116:290" ph="{...}" />
-            <marker date="1573873599919" expanded="true" signature="188:209" ph="{...}" />
-            <marker date="1573873599919" expanded="true" signature="267:288" ph="{...}" />
+            <marker date="1573881266512" expanded="false" signature="6:78" ph="..." />
+            <marker date="1573881266512" expanded="true" signature="116:742" ph="{...}" />
+            <marker date="1573881266512" expanded="true" signature="219:282" ph="{...}" />
+            <marker date="1573881266512" expanded="true" signature="340:740" ph="{...}" />
+            <marker date="1573881266512" expanded="true" signature="355:428" ph="/* int temp = 1; ... */" />
           </folding>
         </state>
       </provider>

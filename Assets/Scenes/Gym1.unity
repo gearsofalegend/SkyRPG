@@ -684,7 +684,7 @@ GameObject:
   - component: {fileID: 1144031934}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1598,6 +1598,41 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5101927454532165529, guid: 7564828915da9864694df02663ca6b7c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609885984640351918, guid: 7564828915da9864694df02663ca6b7c,
+        type: 3}
+      propertyPath: interval
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5101927454511792780, guid: 7564828915da9864694df02663ca6b7c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5101927454511792780, guid: 7564828915da9864694df02663ca6b7c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5101927454511792780, guid: 7564828915da9864694df02663ca6b7c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5101927454511792780, guid: 7564828915da9864694df02663ca6b7c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5101927454511792780, guid: 7564828915da9864694df02663ca6b7c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5101927454511792780, guid: 7564828915da9864694df02663ca6b7c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
