@@ -5,6 +5,7 @@ using UnityEngine;
 public class Test : MonoBehaviour
 {
 
+    public float upForce;
     enum GravityState
     {
         Ground,
@@ -29,7 +30,7 @@ public class Test : MonoBehaviour
         
         if (Input.GetKey(KeyCode.Space))
         {
-            rb.AddRelativeForce(Vector3.up * 25, ForceMode.Force);
+            rb.AddRelativeForce(Vector3.up  * upForce , ForceMode.Force);
             
         }
 
