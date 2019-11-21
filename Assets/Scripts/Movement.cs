@@ -53,7 +53,7 @@ public class Movement : MonoBehaviour
 
             temp.GetComponent<EnergyBlast>().isMoving = true;
 
-          
+            Destroy(temp, 2f);
         }
     }
 }

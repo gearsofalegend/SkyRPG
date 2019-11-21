@@ -5,19 +5,26 @@ using UnityEngine;
 public class EnergyBlast : MonoBehaviour
 {
 
-    private float timeBeforeDestroy = 5f;
+    private float timeBeforeDestroy = 1f, timeRemaning;
 
     public bool isMoving = false;
-  
+
+
+    private void Start()
+    {
+        
+    }
     // Update is called once per frame
     void Update()
     {
-        if (Time.time == timeBeforeDestroy)
+
+/*        timeRemaning += Time.deltaTime;
+        if (timeRemaning == timeBeforeDestroy)
         {
+            print("good");
+            Destroy(gameObject);
             
-            Destroy	(gameObject);
-            
-        }
+        }*/
 
         if (isMoving)
         {

@@ -21,12 +21,14 @@ public class Canon : MonoBehaviour
       
     }
 
-
+   
 
     void spawnMissile()
     {
+        GameObject temp;
 
-        Instantiate(missilePrefab, missileSpawn.position, missileSpawn.rotation);
+        temp = Instantiate(missilePrefab, missileSpawn.position, missileSpawn.rotation);
+        Destroy(temp, 15f);
         
         
     }

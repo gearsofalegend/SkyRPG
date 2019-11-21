@@ -7,6 +7,7 @@ public class cameraFollow : MonoBehaviour
     public float damping;
     private float startime;
     private float elapseTime;
+    public float speed; 
     
     
     public Transform targetCameraPosition;
@@ -19,7 +20,7 @@ public class cameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        elapseTime = (Time.time - startime) * damping	;
+        elapseTime = (Time.time - startime) * damping;
         
         
 //        transform.position = Vector3.Lerp(transform.position, targetCameraPosition.position, damping	* Time.deltaTime);
