@@ -21,14 +21,21 @@ public class cameraFollow : MonoBehaviour
     void Update()
     {
         elapseTime = (Time.time - startime) * damping;
-        
-        
-//        transform.position = Vector3.Lerp(transform.position, targetCameraPosition.position, damping	* Time.deltaTime);
-//        transform.rotation = Quaternion.Slerp(transform.rotation, targetCameraPosition.rotation, damping	* Time.deltaTime);
-        
-        
-        transform.position = Vector3.Lerp(transform.position, targetCameraPosition.position, elapseTime	);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetCameraPosition.rotation, elapseTime	);
-        
+
+
+        //        transform.position = Vector3.Lerp(transform.position, targetCameraPosition.position, damping	* Time.deltaTime);
+        //        transform.rotation = Quaternion.Slerp(transform.rotation, targetCameraPosition.rotation, damping	* Time.deltaTime);
+
+
+        //      transform.position = Vector3.Lerp(transform.position, targetCameraPosition.position, elapseTime	);
+        //      transform.rotation = Quaternion.Slerp(transform.rotation, targetCameraPosition.rotation, elapseTime	);
+
+
+        // go toward the enemy
+        Vector3 directionToPlayer = targetCameraPosition.position - transform.position;
+        directionToPlayer = directionToPlayer.normalized;
+
+        transform.position += directionToPlayer * Time.deltaTime * 2;
+
     }
 }
