@@ -12,7 +12,7 @@ public class Canon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating	("spawnMissile",1,1);
+        InvokeRepeating	("spawnMissile",1,2);
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class Canon : MonoBehaviour
     void spawnMissile()
     {
 
-        Instantiate(missilePrefab, missileSpawn.position, Quaternion.identity	);
+        Instantiate(missilePrefab, missileSpawn.position, missileSpawn.rotation);
         
         
     }

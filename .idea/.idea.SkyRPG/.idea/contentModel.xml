@@ -6,24 +6,28 @@
     <e p="C:\Users\Uns1t\Desktop\Folder\unity_projects\SkyRPG" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="BluetoothClient.cs" t="Include" />
-        <e p="cameraFollow.cs" t="Include" />
-        <e p="Canon.cs" t="Include" />
-        <e p="Missile.cs" t="Include" />
-        <e p="Movement.cs" t="Include" />
-        <e p="MoveParticle.cs" t="Include" />
-        <e p="Scripts" t="Include">
-          <e p="Avatars" t="Include">
-            <e p="DummyAvatar.cs" t="Include" />
-            <e p="DummyEnemy.cs" t="Include" />
-            <e p="KingSword.cs" t="Include" />
+        <e p="ImportedAssets(robot_kingSword)" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Avatars" t="Include">
+              <e p="DummyAvatar.cs" t="Include" />
+              <e p="DummyEnemy.cs" t="Include" />
+              <e p="KingSword.cs" t="Include" />
+            </e>
           </e>
         </e>
-        <e p="TcpClientConnection.cs" t="Include" />
-        <e p="TcpExample.cs" t="Include" />
-        <e p="Test.cs" t="Include" />
-        <e p="TestScript.cs" t="Include" />
-        <e p="ThirdPersonCamera.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="cameraFollow.cs" t="Include" />
+          <e p="Canon.cs" t="Include" />
+          <e p="EnergyBlast.cs" t="Include" />
+          <e p="FlyingMechanics.cs" t="Include" />
+          <e p="Missile.cs" t="Include" />
+          <e p="Movement.cs" t="Include" />
+          <e p="MoveParticle.cs" t="Include" />
+          <e p="TcpClientConnection.cs" t="Include" />
+          <e p="TcpExample.cs" t="Include" />
+          <e p="TestScript.cs" t="Include" />
+          <e p="ThirdPersonCamera.cs" t="Include" />
+        </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />

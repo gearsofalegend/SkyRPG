@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-
-
+    public KeyCode fireKey;
+    public GameObject energyBlast;
 
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -18,19 +17,43 @@ public class Movement : MonoBehaviour
     {
         float moveX = Input.GetAxis("Horizontal");
         float moveY = Input.GetAxis("Vertical");
-        
-        MoveCube(moveX,moveY, Time.deltaTime * 35.0f);
 
+        MoveCube(moveX, moveY, Time.deltaTime * 35.0f);
+
+        FireEnergyMethod();
     }
-
 
 
     void MoveCube(float x, float z, float speed = 5.0f)
     {
         //
-        transform.Translate(new Vector3(x * speed , 0, z * speed));
-        
-        
+        transform.Translate(new Vector3(x * speed, 0, z * speed));
     }
-    
+
+
+    GameObject temp;
+
+    void FireEnergyMethod()
+    {
+        if (Input.GetKeyDown(fireKey)) //TODO to put back
+        {
+            temp = Instantiate(energyBlast, transform.position, transform.rotation);
+            temp.GetComponent<SphereCollider>().enabled = false;
+        }
+
+        if (Input.GetKey(fireKey) && temp)
+        {
+            temp.transform.position = transform.position;
+        }
+
+        if (Input.GetKeyUp(fireKey) && temp)
+        {
+            temp.GetComponent<SphereCollider>().enabled = true;
+
+
+            temp.GetComponent<EnergyBlast>().isMoving = true;
+
+          
+        }
+    }
 }
