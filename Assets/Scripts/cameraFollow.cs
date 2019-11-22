@@ -33,9 +33,14 @@ public class cameraFollow : MonoBehaviour
 
         // go toward the enemy
         Vector3 directionToPlayer = targetCameraPosition.position - transform.position;
-        directionToPlayer = directionToPlayer.normalized;
 
-        transform.position += directionToPlayer * Time.deltaTime * 2;
-
+        if(Vector3.Magnitude(directionToPlayer) > 1)
+        {
+            transform.position += directionToPlayer.normalized * Time.deltaTime * 10;
+        }
+        else
+        {
+            transform.position = targetCameraPosition.position;
+        }
     }
 }
