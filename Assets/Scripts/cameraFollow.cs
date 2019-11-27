@@ -31,11 +31,39 @@ public class cameraFollow : MonoBehaviour
         //      transform.rotation = Quaternion.Slerp(transform.rotation, targetCameraPosition.rotation, elapseTime	);
 
 
-        // go toward the enemy
+       
+      
+      //tra
+
+    }
+
+    private void LateUpdate()
+    {
+        
         Vector3 directionToPlayer = targetCameraPosition.position - transform.position;
-        directionToPlayer = directionToPlayer.normalized;
+        //directionToPlayer = directionToPlayer.normalized;
 
-        transform.position += directionToPlayer * Time.deltaTime * 2;
 
+        if (Vector3.Magnitude(directionToPlayer) > 1)
+        {
+            transform.position += directionToPlayer * Time.deltaTime * speed;
+        }
+        else
+        {
+            transform.position = targetCameraPosition.position;
+        }
+
+
+
+
+
+
+
+
+
+//             transform.position = Vector3.Lerp(transform.position, targetCameraPosition.position, damping	* Time.deltaTime);
+//        transform.rotation = Quaternion.Slerp(transform.rotation, targetCameraPosition.rotation, damping	* Time.deltaTime);
+
+        
     }
 }

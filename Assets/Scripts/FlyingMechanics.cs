@@ -7,6 +7,13 @@ public class FlyingMechanics : MonoBehaviour
 
     public float upForce;
 
+    private float moveX;
+    private float moveZ;
+
+    public Vector3 _inputs;
+    public float Speed = 5;
+
+
     enum GravityState
     {
         Ground,
@@ -28,6 +35,12 @@ public class FlyingMechanics : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    
+         _inputs = Vector3.zero;
+         _inputs.x = Input.GetAxis("Horizontal");
+         _inputs.z = Input.GetAxis("Vertical");
+
         characterStateMethod();
 
 
@@ -77,11 +90,10 @@ public class FlyingMechanics : MonoBehaviour
 
     void FloatMechanics()
     {
-        
-        
+
         if (Input.GetKey(KeyCode.Space))
         {
-            rb.AddRelativeForce(Vector3.up  * upForce , ForceMode.Force);
+            rb.AddRelativeForce(Vector3.up  * upForce , ForceMode.Acceleration	);
             
         }
 
@@ -122,5 +134,14 @@ public class FlyingMechanics : MonoBehaviour
     private void FixedUpdate()
     {
        FloatMechanics();
+       rb.MovePosition(rb.position + _inputs * Speed * Time.fixedDeltaTime);
+       //rb.rotation *= Quaternion.LookRotation(_inputs * Time.fixedDeltaTime) ;
     }
+    
+    
+
+
+    
+    
+    
 }
