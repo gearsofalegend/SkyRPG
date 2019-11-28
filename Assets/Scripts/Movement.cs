@@ -15,20 +15,20 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float moveX = Input.GetAxis("Horizontal");
-        float moveY = Input.GetAxis("Vertical");
+//        float moveX = Input.GetAxis("Horizontal");
+//        float moveY = Input.GetAxis("Vertical");
 
-        MoveCube(moveX, moveY, Time.deltaTime * 35.0f);
+      //  MoveCube(moveX, moveY, Time.deltaTime * 35.0f);
 
         FireEnergyMethod();
     }
 
 
-    void MoveCube(float x, float z, float speed = 5.0f)
-    {
-        //
-        transform.Translate(new Vector3(x * speed, 0, z * speed));
-    }
+//    void MoveCube(float x, float z, float speed = 5.0f)
+//    {
+//        //
+//        transform.Translate(new Vector3(x * speed, 0, z * speed));
+//    }
 
 
     GameObject temp;
@@ -56,4 +56,6 @@ public class Movement : MonoBehaviour
             Destroy(temp, 2f);
         }
     }
+    
+
 }
