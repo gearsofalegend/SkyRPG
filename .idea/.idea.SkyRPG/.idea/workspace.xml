@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c559d919-8458-4a16-8184-42932656bb19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyRPG/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyRPG/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyRPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyRPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Animator Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Animator Controller.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gym1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gym1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/New folder.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FlyingMechanics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FlyingMechanics.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/cameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/cameraFollow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +28,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/FlyingMechanics.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="287">
@@ -137,29 +131,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/cameraFollow.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="52" column="63" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
+            <state relative-caret-position="134">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
-                <marker date="1574387082378" expanded="false" signature="6:78" ph="..." />
-                <marker date="1574387082378" expanded="true" signature="121:1779" ph="{...}" />
-                <marker date="1574387082378" expanded="true" signature="355:397" ph="{...}" />
-                <marker date="1574387082378" expanded="true" signature="455:1054" ph="{...}" />
-                <marker date="1574387082378" expanded="true" signature="527:782" ph="/* transform.position = Vector3.Lerp(transform.position, targetCameraPosition.position, damping&#9;* Time.deltaTime) ... */" />
-                <marker date="1574387082378" expanded="true" signature="793:1018" ph="/* transform.position = Vector3.Lerp(transform.position, targetCameraPosition.position, elapseTime&#9;); ... */" />
-                <marker date="1574387082378" expanded="true" signature="1085:1777" ph="{...}" />
-                <marker date="1574387082378" expanded="true" signature="1304:1402" ph="{...}" />
-                <marker date="1574387082378" expanded="true" signature="1415:1499" ph="{...}" />
-                <marker date="1574387082378" expanded="true" signature="1509:1761" ph="/* transform.position = Vector3.Lerp(transform.position, targetCameraPosition.position, damping&#9;* Time.deltaTime) ... */" />
+                <marker date="1574898944874" expanded="false" signature="6:78" ph="..." />
+                <marker date="1574898944874" expanded="true" signature="121:1781" ph="{...}" />
+                <marker date="1574898944874" expanded="true" signature="355:397" ph="{...}" />
+                <marker date="1574898944874" expanded="true" signature="455:1054" ph="{...}" />
+                <marker date="1574898944874" expanded="true" signature="527:782" ph="/* transform.position = Vector3.Lerp(transform.position, targetCameraPosition.position, damping&#9;* Time.deltaTime) ... */" />
+                <marker date="1574898944874" expanded="true" signature="793:1018" ph="/* transform.position = Vector3.Lerp(transform.position, targetCameraPosition.position, elapseTime&#9;); ... */" />
+                <marker date="1574898944874" expanded="true" signature="1085:1779" ph="{...}" />
+                <marker date="1574898944874" expanded="true" signature="1305:1403" ph="{...}" />
+                <marker date="1574898944874" expanded="true" signature="1416:1500" ph="{...}" />
+                <marker date="1574898944874" expanded="true" signature="1510:1762" ph="/* transform.position = Vector3.Lerp(transform.position, targetCameraPosition.position, damping&#9;* Time.deltaTime) ... */" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../scripting3-assignment5/Assets/Scripts(TDD)/ToolBox.cs">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scenes/Gym1.unity">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-57">
-              <caret line="176" column="24" selection-start-line="176" selection-start-column="24" selection-end-line="176" selection-end-column="24" />
+            <state relative-caret-position="-9975">
+              <caret line="12739" column="71" selection-start-line="12739" selection-start-column="71" selection-end-line="12739" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scenes/ArtProjectScene.unity">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="197" column="21" lean-forward="true" selection-start-line="197" selection-start-column="21" selection-end-line="197" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -175,26 +178,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnergyBlast.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-              <folding>
-                <marker date="1574308166309" expanded="true" signature="6:78" ph="..." />
-                <marker date="1574308166309" expanded="true" signature="120:845" ph="{...}" />
-                <marker date="1574308166309" expanded="true" signature="241:262" ph="{...}" />
-                <marker date="1574308166309" expanded="true" signature="319:659" ph="{...}" />
-                <marker date="1574308166309" expanded="true" signature="327:510" ph="/* timeRemaning += Time.deltaTime; ... */" />
-                <marker date="1574308166309" expanded="true" signature="533:637" ph="{...}" />
-                <marker date="1574308166309" expanded="true" signature="711:843" ph="{...}" />
-                <marker date="1574308166309" expanded="true" signature="764:837" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>guid</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -210,6 +199,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Canon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FlyingMechanics.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TcpClientConnection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Gym1.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnergyBlast.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/43/c668e3a3/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
@@ -239,17 +229,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Canon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnergyBlast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Missile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/cameraFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FlyingMechanics.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/cameraFollow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Gym1.unity" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="643" />
+    <option name="y" value="341" />
+    <option name="width" value="784" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
@@ -263,6 +254,16 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Prefabs" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scenes" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
@@ -336,7 +337,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44931000" />
+    <option name="totallyTimeSpent" value="46618000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -348,10 +349,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <frame x="643" y="341" width="784" height="743" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22541603" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22513813" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -411,9 +411,6 @@
           <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ArtProjectScene.unity">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/77/50eed0fa/Vector3.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -580,25 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/cameraFollow.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="52" column="63" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
-          <folding>
-            <marker date="1574387082378" expanded="false" signature="6:78" ph="..." />
-            <marker date="1574387082378" expanded="true" signature="121:1779" ph="{...}" />
-            <marker date="1574387082378" expanded="true" signature="355:397" ph="{...}" />
-            <marker date="1574387082378" expanded="true" signature="455:1054" ph="{...}" />
-            <marker date="1574387082378" expanded="true" signature="527:782" ph="/* transform.position = Vector3.Lerp(transform.position, targetCameraPosition.position, damping&#9;* Time.deltaTime) ... */" />
-            <marker date="1574387082378" expanded="true" signature="793:1018" ph="/* transform.position = Vector3.Lerp(transform.position, targetCameraPosition.position, elapseTime&#9;); ... */" />
-            <marker date="1574387082378" expanded="true" signature="1085:1777" ph="{...}" />
-            <marker date="1574387082378" expanded="true" signature="1304:1402" ph="{...}" />
-            <marker date="1574387082378" expanded="true" signature="1415:1499" ph="{...}" />
-            <marker date="1574387082378" expanded="true" signature="1509:1761" ph="/* transform.position = Vector3.Lerp(transform.position, targetCameraPosition.position, damping&#9;* Time.deltaTime) ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../scripting3-assignment5/Assets/Scripts(TDD)/ToolBox.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-57">
@@ -700,6 +678,39 @@
             <marker date="1574897172521" expanded="true" signature="2709:2769" ph="{...}" />
             <marker date="1574897172521" expanded="true" signature="2811:3006" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/cameraFollow.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <marker date="1574898944874" expanded="false" signature="6:78" ph="..." />
+            <marker date="1574898944874" expanded="true" signature="121:1781" ph="{...}" />
+            <marker date="1574898944874" expanded="true" signature="355:397" ph="{...}" />
+            <marker date="1574898944874" expanded="true" signature="455:1054" ph="{...}" />
+            <marker date="1574898944874" expanded="true" signature="527:782" ph="/* transform.position = Vector3.Lerp(transform.position, targetCameraPosition.position, damping&#9;* Time.deltaTime) ... */" />
+            <marker date="1574898944874" expanded="true" signature="793:1018" ph="/* transform.position = Vector3.Lerp(transform.position, targetCameraPosition.position, elapseTime&#9;); ... */" />
+            <marker date="1574898944874" expanded="true" signature="1085:1779" ph="{...}" />
+            <marker date="1574898944874" expanded="true" signature="1305:1403" ph="{...}" />
+            <marker date="1574898944874" expanded="true" signature="1416:1500" ph="{...}" />
+            <marker date="1574898944874" expanded="true" signature="1510:1762" ph="/* transform.position = Vector3.Lerp(transform.position, targetCameraPosition.position, damping&#9;* Time.deltaTime) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ArtProjectScene.unity">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="197" column="21" lean-forward="true" selection-start-line="197" selection-start-column="21" selection-end-line="197" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/Gym1.unity">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9975">
+          <caret line="12739" column="71" selection-start-line="12739" selection-start-column="71" selection-end-line="12739" selection-end-column="71" />
         </state>
       </provider>
     </entry>

@@ -41,6 +41,7 @@ public class cameraFollow : MonoBehaviour
     {
         
         Vector3 directionToPlayer = targetCameraPosition.position - transform.position;
+
         //directionToPlayer = directionToPlayer.normalized;
 
 
@@ -65,5 +66,6 @@ public class cameraFollow : MonoBehaviour
 //        transform.rotation = Quaternion.Slerp(transform.rotation, targetCameraPosition.rotation, damping	* Time.deltaTime);
 
         
+
     }
 }
