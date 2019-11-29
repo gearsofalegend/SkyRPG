@@ -12879,9 +12879,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 4421813495850969161}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  child: {fileID: 4421813495851267475}
+  boneAxis: {x: 0, y: 0, z: -1}
+  radius: 0.08
+  isUseEachBoneForceSettings: 1
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.007, z: 0}
+  colliders:
+  - {fileID: 4421813495857011765}
+  - {fileID: 4421813495857011767}
+  - {fileID: 4421813495857011753}
+  - {fileID: 4421813495857011763}
+  debug: 1
+  threshold: 0.01
 --- !u!114 &4421813495857011959
 MonoBehaviour:
   m_ObjectHideFlags: 0
