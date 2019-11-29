@@ -34,9 +34,6 @@ public class CharacterFloat : MonoBehaviour
     void FixedUpdate()
     {
         Floating();
-
-    
-
     }
 
     void Floating()
@@ -52,15 +49,8 @@ public class CharacterFloat : MonoBehaviour
 
                 if (Input.GetButton("Boost"))
                 {
-                //rotation = new Vector3(0, 1, 0); //extra
-                
                 transform.position += new Vector3(0, 1, 0) * Time.deltaTime * boost; // acceleration 
-                //transform.localRotation = transform.localRotation * Quaternion.Euler(rotation * Time.deltaTime * spin); // extra
-
-                 
                 }
-             
-
             }
         
         else 
@@ -72,20 +62,9 @@ public class CharacterFloat : MonoBehaviour
 
                 if (Input.GetButton("Boost")) // fall faster
                 {
-                    //rotation = new Vector3(0, -1, 0); //extra
-
-                    transform.position += new Vector3(0, -1, 0) * Time.deltaTime * boost; // acceleration 
-                    //transform.localRotation = transform.localRotation * Quaternion.Euler(rotation * -Time.deltaTime * -spin); // extra
-
-                
+                    transform.position += new Vector3(0, -1, 0) * Time.deltaTime * boost; // acceleration         
                 }
-                else // just falling
-                {
-                    //transform.localRotation = Quaternion.identity;
-                    //rotation = new Vector3(0, 0, 0);//extra
-                   
-                }
-
+     
             }
             else if (isLocked == true) // not falling
             {

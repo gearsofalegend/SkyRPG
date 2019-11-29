@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class CharacterMovement : MonoBehaviour
 {
     public int speed;
@@ -28,9 +29,9 @@ public class CharacterMovement : MonoBehaviour
     void Update()
     {
         CharMove();
-        Jump();
+        //Jump();
         GetDirectionInput();
-        Dash();
+        //Dash();
     }
 
     void CharMove()
@@ -48,38 +49,38 @@ public class CharacterMovement : MonoBehaviour
 
     }
 
-    void Jump()
-    {
-        if (isgrounded) // can remoce "True" because just saying it means its true.. "!" before will make it opposite (false).. "!=" means opposite of current result (isDead example with Time)
-        {
-            if (Input.GetButtonDown("Jump"))
-            {
+//    void Jump()
+//    {
+//        if (isgrounded) // can remoce "True" because just saying it means its true.. "!" before will make it opposite (false).. "!=" means opposite of current result (isDead example with Time)
+//        {
+//            if (Input.GetButtonDown("Jump"))
+//            {
+//
+//                rb.AddForce(0, jumpforce, 0, ForceMode.Impulse); //I can jump one and dash forever, I might keep that
+//
+//
+//            }
+//
+//        }
+//    }
 
-                rb.AddForce(0, jumpforce, 0, ForceMode.Impulse); //I can jump one and dash forever, I might keep that
-
-
-            }
-
-        }
-    }
-
-    void Dash() // This feature punishes players that use it too much. It gets harder to control
-    {
-        if (isgrounded)
-        {
-            if (Input.GetButtonDown("Dash"))
-            {
-                rb.AddForce(direction * dashforce, ForceMode.Impulse); // because in this case direction is a Vector3
-
-            }
-
-            Debug.Log(rb.velocity);
-
-            rb.velocity -= rb.velocity * Time.deltaTime * decceleration;
-
-            
-        }
-    }
+//    void Dash() // This feature punishes players that use it too much. It gets harder to control
+//    {
+//        if (isgrounded)
+//        {
+//            if (Input.GetButtonDown("Dash"))
+//            {
+//                rb.AddForce(direction * dashforce, ForceMode.Impulse); // because in this case direction is a Vector3
+//
+//            }
+//
+//            Debug.Log(rb.velocity);
+//
+//            rb.velocity -= rb.velocity * Time.deltaTime * decceleration;
+//
+//            
+//        }
+//    }
 
     void GetDirectionInput()
     {

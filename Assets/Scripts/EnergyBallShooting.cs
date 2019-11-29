@@ -33,9 +33,9 @@ public class EnergyBallShooting : MonoBehaviour
 
     GameObject temp;
 
-    void FireEnergyMethod()
+    void FireEnergyMethod()//TODO cooldown
     {
-        if (Input.GetKeyDown(fireKey)) //TODO to put back
+        if (Input.GetKeyDown(fireKey)) 
         {
             temp = Instantiate(energyBlast, transform.position, transform.rotation);
             temp.GetComponent<SphereCollider>().enabled = false;
@@ -44,13 +44,12 @@ public class EnergyBallShooting : MonoBehaviour
         if (Input.GetKey(fireKey) && temp)
         {
             temp.transform.position = transform.position;
+            temp.transform.rotation = transform.rotation;
         }
 
         if (Input.GetKeyUp(fireKey) && temp)
         {
             temp.GetComponent<SphereCollider>().enabled = true;
-
-
             temp.GetComponent<EnergyBlast>().isMoving = true;
 
             Destroy(temp, 2f);
