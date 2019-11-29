@@ -7,30 +7,38 @@ using UnityEngine.XR;
 public class CharacterMovement : MonoBehaviour
 {
     private Animator animator;
-    private MeshCollider swordCollider;
-    
-    
-    public int speed;
-    public Vector3 direction;
-    public float jumpforce;
-    public float dashforce;
-    private float gravityforce = 9.807f; // optional can do later
-    private Rigidbody rb;
-    private bool isgrounded;
-  
-    public float decceleration;
+    private MeshCollider swordCollider; //for swordStrike collider (damage)
 
+    enum GravityState
+    {
+        Ground,
+        Flying
+    }
+
+    private GravityState characterState;
+
+    private float horizontalAxis, verticalAxis;
+
+
+    public int speed;
+    //public Vector3 direction;
+    //public float jumpforce;
+    //public float dashforce;
+    //private float gravityforce = 9.807f; // optional can do later
+
+    private Rigidbody rb;
+    //private bool isgrounded;
+
+    //public float decceleration;
 
 
     // Start is called before the first frame update
     void Start()
     {
-       
-
         rb = GetComponent<Rigidbody>();
         //animation and colliders
         animator = GetComponent<Animator>();
-       // swordCollider = GetComponent<MeshCollider>();
+        swordCollider = GameObject.FindWithTag("SkySword").GetComponent<MeshCollider>();
     }
 
     // Update is called once per frame
@@ -38,40 +46,24 @@ public class CharacterMovement : MonoBehaviour
     {
         CharMove();
         //Jump();
-        GetDirectionInput();
+        //GetDirectionInput();
         //Dash();
 
-        ///ANIMATIONS
-        if (Input.GetKeyDown(KeyCode.N))
-        {
-            animator.SetTrigger("swordStrike");
-            //swordCollider.enabled = true;
-
-        }
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
-        {
-            animator.SetBool("run", true);
-        }
-        else
-        {
-            animator.SetBool("run", false);
-        }
-
+        Animations();
+        characterStateMethod();
     }
 
     void CharMove()
     {
-        float horizontalAxis = Input.GetAxisRaw("Horizontal"); //this variable collects the value of the button pressed (1,0, or -1)
-
-        float verticalAxis = Input.GetAxisRaw("Vertical");
+        horizontalAxis =
+            Input.GetAxisRaw("Horizontal"); //this variable collects the value of the button pressed (1,0, or -1)
+        verticalAxis = Input.GetAxisRaw("Vertical");
 
 
         Vector3 moveForward = transform.forward * verticalAxis;
         Vector3 moveSide = transform.right * horizontalAxis;
 
         gameObject.transform.position += (moveForward + moveSide) * Time.deltaTime * speed;
-
-
     }
 
 //    void Jump()
@@ -107,32 +99,96 @@ public class CharacterMovement : MonoBehaviour
 //        }
 //    }
 
-    void GetDirectionInput()
+//    void GetDirectionInput()
+//    {
+//        float horizontalAxis =
+//            Input.GetAxisRaw("Horizontal"); //this variable collects the value of the button pressed (1,0, or -1)
+//
+//        float verticalAxis = Input.GetAxisRaw("Vertical");
+//
+//
+//
+//        Vector3 moveForward = transform.forward * verticalAxis;
+//        Vector3 moveSide = transform.right * horizontalAxis;
+//
+//
+//
+//        direction = (moveForward + moveSide);
+//
+//    }
+
+//    private void OnCollisionEnter(Collision collision)
+//    {
+//        if (collision.gameObject.tag == "Ground")
+//        {
+//            isgrounded = true;
+//           
+//        }
+//
+//
+//    }
+
+
+    void characterStateMethod()
     {
-        float horizontalAxis = Input.GetAxisRaw("Horizontal"); //this variable collects the value of the button pressed (1,0, or -1)
+        RaycastHit hit;
+        // Does the ray intersect any objects excluding the player layer
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, Mathf.Infinity))
+        {
+            if (hit.distance > 0.5f)
+            {
+                //canJump = false;
+                characterState = GravityState.Flying;
+                print("StateG " + characterState);
+            }
 
-        float verticalAxis = Input.GetAxisRaw("Vertical");
 
-      
+            //will check the hit distance and verify if we can jump or not 
+            if (hit.distance < 0.5f)
+            {
+                //canJump = true;
+                characterState = GravityState.Ground;
+                print("StateG " + characterState);
+            }
 
-        Vector3 moveForward = transform.forward * verticalAxis;
-        Vector3 moveSide = transform.right * horizontalAxis;
 
-     
-
-        direction = (moveForward + moveSide);
-
+            //  Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.yellow);
+        }
+        else
+        {
+            //  Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 1000, Color.white);
+        }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void Animations()
     {
-        if (collision.gameObject.tag == "Ground")
+        ///ANIMATIONS
+        if (Input.GetKeyDown(KeyCode.N))
         {
-            isgrounded = true;
-           
+            animator.SetTrigger("swordStrike");
+            swordCollider.enabled = true;
+        }else if (animator.GetCurrentAnimatorStateInfo(0).IsName("SwordStrike") )
+        {
+            swordCollider.enabled = false;
+        }
+
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+        {
+            animator.SetBool("run", true);
+        }
+        else
+        {
+            animator.SetBool("run", false);
         }
 
 
+//        if (Input.GetKey(KeyCode.Space)  && characterState == GravityState.Flying)
+//        {
+//            animator.SetFloat("walk", verticalAxis);
+//        }
+////        else 
+////        {
+////            animator.SetBool("flyFoward", false);
+////        }
     }
-
 }

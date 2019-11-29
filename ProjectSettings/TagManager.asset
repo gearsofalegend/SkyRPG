@@ -8,6 +8,7 @@ TagManager:
   - EnergyBall
   - TriggerOne
   - Character
+  - SkySword
   layers:
   - Default
   - TransparentFX
