@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
 [RequireComponent(typeof(Rigidbody))]
 public class CharacterMovement : MonoBehaviour
 {
+    private Animator animator;
+    private MeshCollider swordCollider;
+    
+    
     public int speed;
     public Vector3 direction;
     public float jumpforce;
@@ -23,6 +28,9 @@ public class CharacterMovement : MonoBehaviour
        
 
         rb = GetComponent<Rigidbody>();
+        //animation and colliders
+        animator = GetComponent<Animator>();
+       // swordCollider = GetComponent<MeshCollider>();
     }
 
     // Update is called once per frame
@@ -32,6 +40,23 @@ public class CharacterMovement : MonoBehaviour
         //Jump();
         GetDirectionInput();
         //Dash();
+
+        ///ANIMATIONS
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            animator.SetTrigger("swordStrike");
+            //swordCollider.enabled = true;
+
+        }
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+        {
+            animator.SetBool("run", true);
+        }
+        else
+        {
+            animator.SetBool("run", false);
+        }
+
     }
 
     void CharMove()

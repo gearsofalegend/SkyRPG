@@ -105,6 +105,8 @@
           <e p="Scripts_Try" t="Include">
             <e p="CharacterFloat.cs" t="Include" />
             <e p="CharacterMovement.cs" t="Include" />
+            <e p="Killing.cs" t="Include" />
+            <e p="Shimmy.cs" t="Include" />
             <e p="ThirdPersonCam.cs" t="Include" />
           </e>
         </e>
