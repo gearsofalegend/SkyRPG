@@ -73,10 +73,7 @@ public class FlyingMechanics : MonoBehaviour
                 // print("StateG " + characterState);
             }
 
-            // DEBUG
-          //  print("State " + characterState);
-          //  print("value " + hit.distance);
-
+         
 
           //  Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.yellow);
         }
@@ -134,8 +131,13 @@ public class FlyingMechanics : MonoBehaviour
     private void FixedUpdate()
     {
        FloatMechanics();
-       rb.MovePosition(rb.position + _inputs * Speed * Time.fixedDeltaTime);
-       //rb.rotation *= Quaternion.LookRotation(_inputs * Time.fixedDeltaTime) ;
+       //rb.MovePosition(rb.position + _inputs * Speed * Time.fixedDeltaTime);
+       //rb.position += _inputs * Speed * Time.fixedDeltaTime;
+ 
+       transform.Translate(_inputs * Time.fixedDeltaTime *Speed);
+       //rb.rotation *= Quaternion.LookRotation(_inputs);
+       //rb.rotation *= Quaternion.LookRotation(_inputs * Time.fixedDeltaTime);
+
     }
     
     

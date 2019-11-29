@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Missile
+  - EnergyBall
+  - TriggerOne
   layers:
   - Default
   - TransparentFX

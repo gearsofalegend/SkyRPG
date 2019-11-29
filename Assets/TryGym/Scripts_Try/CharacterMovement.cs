@@ -11,7 +11,7 @@ public class CharacterMovement : MonoBehaviour
     private float gravityforce = 9.807f; // optional can do later
     private Rigidbody rb;
     private bool isgrounded;
-   /// private bool secondjumpavailable;
+  
     public float decceleration;
 
 
@@ -19,7 +19,7 @@ public class CharacterMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //secondjumpavailable = true;
+       
 
         rb = GetComponent<Rigidbody>();
     }
@@ -39,7 +39,6 @@ public class CharacterMovement : MonoBehaviour
 
         float verticalAxis = Input.GetAxisRaw("Vertical");
 
-        //this.gameObject.transform.position += new Vector3(horizontalAxis, 0, verticalAxis) * Time.deltaTime * speed;
 
         Vector3 moveForward = transform.forward * verticalAxis;
         Vector3 moveSide = transform.right * horizontalAxis;
@@ -59,14 +58,6 @@ public class CharacterMovement : MonoBehaviour
                 rb.AddForce(0, jumpforce, 0, ForceMode.Impulse); //I can jump one and dash forever, I might keep that
 
 
-              /* if (!secondjumpavailable)
-                {
-                    isgrounded = false;
-                }
-                else
-                {
-                    secondjumpavailable = false;
-                }*/
             }
 
         }
@@ -86,7 +77,7 @@ public class CharacterMovement : MonoBehaviour
 
             rb.velocity -= rb.velocity * Time.deltaTime * decceleration;
 
-            //have to make a "isRunning" for when I throw the ball I am still able to throw forward
+            
         }
     }
 
@@ -96,12 +87,12 @@ public class CharacterMovement : MonoBehaviour
 
         float verticalAxis = Input.GetAxisRaw("Vertical");
 
-        //this.gameObject.transform.position += new Vector3(horizontalAxis, 0, verticalAxis) * Time.deltaTime * speed;
+      
 
         Vector3 moveForward = transform.forward * verticalAxis;
         Vector3 moveSide = transform.right * horizontalAxis;
 
-        //direction = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+     
 
         direction = (moveForward + moveSide);
 
@@ -112,7 +103,7 @@ public class CharacterMovement : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             isgrounded = true;
-            //secondjumpavailable = true;
+           
         }
 
 
