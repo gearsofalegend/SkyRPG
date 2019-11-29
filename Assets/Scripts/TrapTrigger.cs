@@ -20,10 +20,14 @@ public class TrapTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        
+        print("I GOT ENTERED");
+        
         if (other.tag == "Player" && gameObject.name == "TriggerOne")
         {
             //canon.isShooting = true;
 
+            print("TriggerWorks");
             foreach (var c in canon)
             {
                 c.isShooting = true;

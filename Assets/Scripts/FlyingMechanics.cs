@@ -73,10 +73,7 @@ public class FlyingMechanics : MonoBehaviour
                 // print("StateG " + characterState);
             }
 
-            // DEBUG
-          //  print("State " + characterState);
-          //  print("value " + hit.distance);
-
+         
 
           //  Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.yellow);
         }

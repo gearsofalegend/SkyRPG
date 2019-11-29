@@ -6,7 +6,6 @@
     <e p="C:\Users\Uns1t\Desktop\Folder\unity_projects\SkyRPG" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="CannonHead.cs" t="Include" />
         <e p="CanonHead.cs" t="Include" />
         <e p="ImportedAssets(robot_kingSword)" t="Include">
           <e p="Scripts" t="Include">
@@ -100,6 +99,13 @@
           </e>
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+        <e p="TryGym" t="Include">
+          <e p="Scripts_Try" t="Include">
+            <e p="CharacterFloat.cs" t="Include" />
+            <e p="CharacterMovement.cs" t="Include" />
+            <e p="ThirdPersonCam.cs" t="Include" />
           </e>
         </e>
         <e p="UnityChan" t="Include">

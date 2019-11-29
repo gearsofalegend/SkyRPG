@@ -1,13 +1,8 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/TryGym.meta
-guid: e76a4d4b2e088724e8027cd62e13d1bb
-=======
 guid: 3f72a41d7e127994683f585554ac9255
->>>>>>> f2293d2b60c617763a7110b6aa92307fa9e0e49c:Assets/UnityChan.meta
 folderAsset: yes
-timeCreated: 1450705264
-licenseType: Pro
 DefaultImporter:
+  externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 

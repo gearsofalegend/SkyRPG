@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using UnityEngine;
 
 public class Missile : MonoBehaviour
 {
     private GameObject player;
+    public float missileSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +25,7 @@ public class Missile : MonoBehaviour
         Vector3 directionToPlayer = player.transform.position - transform.position;
         directionToPlayer = directionToPlayer.normalized;
 
-        transform.position += directionToPlayer * Time.deltaTime * 2;
+        transform.position += directionToPlayer * Time.deltaTime * missileSpeed;
     }
     
 //    void OnCollisionEnter(Collision other)
