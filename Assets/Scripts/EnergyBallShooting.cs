@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class EnergyBallShooting : MonoBehaviour
 {
     public KeyCode fireKey;
     public GameObject energyBlast;

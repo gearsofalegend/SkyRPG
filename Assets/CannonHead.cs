@@ -2,33 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class TestScript : MonoBehaviour
+public class CannonHead : MonoBehaviour
 {
-
-    private int _OnStarc()
-    {
-
-        return 0;
-    }
-
-    private int hello;
-    private bool ii;
-    
-    
-   
-    
-    
-
+    private GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       // transform.LookAt(player.transform,Vector3.right);
     }
 }

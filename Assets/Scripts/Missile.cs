@@ -10,16 +10,14 @@ public class Missile : MonoBehaviour
     void Start()
     {
         player = GameObject.FindWithTag("Player");
-        //  transform.localRotation = Quaternion.Euler	(0,90,90);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //int temp = 1;
+       
 
-        //transform.position += Vector3.forward;
-        transform.LookAt(player.transform		);
+        transform.LookAt(player.transform);
 
         // go toward the enemy
         Vector3 directionToPlayer = player.transform.position - transform.position;
