@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c559d919-8458-4a16-8184-42932656bb19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyRPG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyRPG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Crate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Missiles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Missiles.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gym1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gym1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Missile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Missile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TryGym/Scripts_Try/CharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TryGym/Scripts_Try/CharacterMovement.cs" afterDir="false" />
-    </list>
+    <list default="true" id="c559d919-8458-4a16-8184-42932656bb19" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/TryGym/Scripts_Try/CharacterMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2805">
-              <caret line="189" column="12" lean-forward="true" selection-start-line="189" selection-start-column="12" selection-end-line="189" selection-end-column="12" />
+            <state relative-caret-position="-1341">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <marker date="1575097624172" expanded="false" signature="6:78" ph="..." />
                 <marker date="1575097624172" expanded="true" signature="186:5420" ph="{...}" />
@@ -156,7 +148,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Crate.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -377,8 +369,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="299" />
-    <option name="y" value="347" />
+    <option name="x" value="-100" />
+    <option name="y" value="540" />
     <option name="width" value="1018" />
     <option name="height" value="788" />
   </component>
@@ -484,12 +476,12 @@
       <option name="presentableId" value="Default" />
       <updated>1573706966874</updated>
       <workItem from="1573706972404" duration="439000" />
-      <workItem from="1574901399789" duration="39557000" />
+      <workItem from="1574901399789" duration="40591000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86175000" />
+    <option name="totallyTimeSpent" value="87209000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -501,10 +493,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="299" y="347" width="1018" height="788" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27974948" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20272315" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1065,10 +1057,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Crate.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <marker date="1575140766726" expanded="false" signature="6:78" ph="..." />
+            <marker date="1575140766726" expanded="true" signature="114:513" ph="{...}" />
+            <marker date="1575140766726" expanded="true" signature="186:207" ph="{...}" />
+            <marker date="1575140766726" expanded="true" signature="265:286" ph="{...}" />
+            <marker date="1575140766726" expanded="true" signature="335:511" ph="{...}" />
+            <marker date="1575140766726" expanded="true" signature="378:505" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/TryGym/Scripts_Try/CharacterMovement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2805">
-          <caret line="189" column="12" lean-forward="true" selection-start-line="189" selection-start-column="12" selection-end-line="189" selection-end-column="12" />
+        <state relative-caret-position="-1341">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
             <marker date="1575097624172" expanded="false" signature="6:78" ph="..." />
             <marker date="1575097624172" expanded="true" signature="186:5420" ph="{...}" />
@@ -1093,21 +1100,6 @@
             <marker date="1575097624172" expanded="true" signature="4971:5064" ph="{...}" />
             <marker date="1575097624172" expanded="true" signature="5077:5146" ph="{...}" />
             <marker date="1575097624172" expanded="true" signature="5149:5412" ph="/* if (Input.GetKey(KeyCode.Space)  &amp;&amp; characterState == GravityState.Flying) ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Crate.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding>
-            <marker date="1575140766726" expanded="false" signature="6:78" ph="..." />
-            <marker date="1575140766726" expanded="true" signature="114:513" ph="{...}" />
-            <marker date="1575140766726" expanded="true" signature="186:207" ph="{...}" />
-            <marker date="1575140766726" expanded="true" signature="265:286" ph="{...}" />
-            <marker date="1575140766726" expanded="true" signature="335:511" ph="{...}" />
-            <marker date="1575140766726" expanded="true" signature="378:505" ph="{...}" />
           </folding>
         </state>
       </provider>
