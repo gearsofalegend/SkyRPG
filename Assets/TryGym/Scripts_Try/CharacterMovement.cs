@@ -17,7 +17,8 @@ public class CharacterMovement : MonoBehaviour
 
     private GravityState characterState;
 
-    private float horizontalAxis, verticalAxis;
+    private float //horizontalAxis,
+        verticalAxis;
 
 
     public int speed;
@@ -55,15 +56,14 @@ public class CharacterMovement : MonoBehaviour
 
     void CharMove()
     {
-        horizontalAxis =
-            Input.GetAxisRaw("Horizontal"); //this variable collects the value of the button pressed (1,0, or -1)
+        //horizontalAxis =Input.GetAxisRaw("Horizontal"); //this variable collects the value of the button pressed (1,0, or -1)
         verticalAxis = Input.GetAxisRaw("Vertical");
 
 
-        Vector3 moveForward = transform.forward * verticalAxis;
-        Vector3 moveSide = transform.right * horizontalAxis;
+        Vector3 verticalMovement = transform.forward * verticalAxis;
+        //Vector3 moveSide = transform.right * horizontalAxis;
 
-        gameObject.transform.position += (moveForward + moveSide) * Time.deltaTime * speed;
+        gameObject.transform.position += verticalMovement * Time.deltaTime * speed;
     }
 
 //    void Jump()
@@ -179,6 +179,17 @@ public class CharacterMovement : MonoBehaviour
         else
         {
             animator.SetBool("run", false);
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+        {
+            
+            animator.SetBool("walkBool",true);
+            
+        }
+        else
+        {
+            animator.SetBool("walkBool", false);
         }
 
 

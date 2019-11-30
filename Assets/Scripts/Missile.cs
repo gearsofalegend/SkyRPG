@@ -11,7 +11,7 @@ public class Missile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindWithTag("Player");
+        player = GameObject.FindWithTag("Character");
     }
 
     // Update is called once per frame
@@ -28,12 +28,13 @@ public class Missile : MonoBehaviour
         transform.position += directionToPlayer * Time.deltaTime * missileSpeed;
     }
     
-//    void OnCollisionEnter(Collision other)
-//    {
-//        if (other.gameObject.name == "EnergyBall")
-//        {
-//            Destroy(gameObject);
-//        }
-//    }
+    void OnCollisionEnter(Collision other)
+    {
+        
+        if (other.gameObject.tag == "EnergyBall")
+        {
+            Destroy(gameObject);
+        }
+    }
     
 }

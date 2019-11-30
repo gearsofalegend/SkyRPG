@@ -22,6 +22,7 @@ public class Crate : MonoBehaviour
         {
             
             Destroy(this.gameObject);
+            //TODO instantiate Key or Item
             
         }
     }
