@@ -21,7 +21,7 @@ public class Key : MonoBehaviour
     {
         if (other.tag == "Character")
         {
-           // toolBoxManager.keys++;
+            //toolBoxManager.keys++;
             Destroy(this.gameObject);
         }
     }

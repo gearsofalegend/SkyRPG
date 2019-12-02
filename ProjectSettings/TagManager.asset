@@ -9,6 +9,7 @@ TagManager:
   - TriggerOne
   - Character
   - SkySword
+  - Crate
   layers:
   - Default
   - TransparentFX
