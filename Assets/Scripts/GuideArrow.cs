@@ -10,6 +10,7 @@ public class GuideArrow : MonoBehaviour
     private Dictionary<float, Crate> crateDictionary;
     private Transform characterTransform;
     private Transform nearbyCrateTransform;
+    private bool isEnabled = false;
     
     // Start is called before the first frame update
     void Start()
@@ -18,19 +19,11 @@ public class GuideArrow : MonoBehaviour
         crateDictionary = new Dictionary<float, Crate>();
         
         
-        
-//
-//        foreach (var VARIABLE in c )
-//        {
-//            crateDictionary.Add();
-//        }
-        
-        
         characterTransform = GameObject.FindWithTag("Character").transform;
 
         nearbyCrateTransform = GetNearbyCrate();
         
-        InvokeRepeating("assignNearby",0,0.5f);
+        InvokeRepeating("assignNearby",0,0.1f);
     }
 
     // Update is called once per frame
@@ -42,11 +35,19 @@ public class GuideArrow : MonoBehaviour
         
       
 
-//        if (Input.GetKeyDown(KeyCode.H) && !this.enabled)
-//        {
-//            gameObject.SetActive();
-//        }
+        if (Input.GetKeyDown(KeyCode.H) && !isEnabled )
+        {
+            gameObject.SetActive(true);
+            isEnabled = true;
 
+
+
+        }
+        if (Input.GetKeyDown(KeyCode.H) && isEnabled)
+        {
+            gameObject.SetActive(false);
+            isEnabled = false;
+        }
 
     }
 
@@ -68,7 +69,6 @@ public class GuideArrow : MonoBehaviour
             //add them to dictionary
             crateDictionary.Add(Vector3.Distance(characterTransform.position,crate.transform.position), crate);
         }
-
 
         try
         {
@@ -95,7 +95,6 @@ public class GuideArrow : MonoBehaviour
         }
         
         
-
         return temp;
     }
 
@@ -104,8 +103,8 @@ public class GuideArrow : MonoBehaviour
         nearbyCrateTransform = GetNearbyCrate();
     }
 
-    private void LateUpdate()
-    {
-        //GetNearbyCrate();
-    }
+//    private void LateUpdate()
+//    {
+//        //GetNearbyCrate();
+//    }
 }
