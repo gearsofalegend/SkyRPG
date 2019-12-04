@@ -25,6 +25,7 @@
           <e p="EnergyBlast.cs" t="Include" />
           <e p="FlyingMechanics.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="Goal.cs" t="Include" />
           <e p="GuideArrow.cs" t="Include" />
           <e p="Key.cs" t="Include" />
           <e p="Missile.cs" t="Include" />

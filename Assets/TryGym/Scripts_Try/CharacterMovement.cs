@@ -17,7 +17,7 @@ public class CharacterMovement : MonoBehaviour
 
     private GravityState characterState;
 
-    private float //horizontalAxis,
+    private float horizontalAxis,
         verticalAxis;
 
 
@@ -192,14 +192,27 @@ public class CharacterMovement : MonoBehaviour
             animator.SetBool("walkBool", false);
         }
 
-
-//        if (Input.GetKey(KeyCode.Space)  && characterState == GravityState.Flying)
+//
+//        if (characterState == GravityState.Flying )
 //        {
-//            animator.SetFloat("walk", verticalAxis);
+//            animator.SetBool("flyForward", true);
 //        }
-////        else 
-////        {
-////            animator.SetBool("flyFoward", false);
-////        }
+//        else if(characterState == GravityState.Ground)
+//        {
+//            animator.SetBool("flyForward", false);
+//        }
+
+        switch (characterState)
+        {
+            case GravityState.Flying:
+                animator.SetBool("flyForward", true);
+                break;
+            default:
+                animator.SetBool("flyForward", false);
+                break;
+            
+        }
+
+
     }
 }
