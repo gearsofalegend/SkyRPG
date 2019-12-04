@@ -5,11 +5,14 @@ using UnityEngine;
 public class Key : MonoBehaviour
 {
 
+    private GameManager gameManager;
+
 
     // Start is called before the first frame update
     void Start()
     {
 
+        gameManager = GameManager.GetInstance();
        
     }
 
@@ -21,7 +24,7 @@ public class Key : MonoBehaviour
     {
         if (other.tag == "Character")
         {
-            //toolBoxManager.keys++;
+            gameManager.keys++;
             Destroy(this.gameObject);
         }
     }
