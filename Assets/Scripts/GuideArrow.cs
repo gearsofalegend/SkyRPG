@@ -32,6 +32,7 @@ public class GuideArrow : MonoBehaviour
 
         
             transform.LookAt(nearbyCrateTransform);
+          //  transform.position = characterTransform.position + (Vector3.up * 5);
         
       
 
