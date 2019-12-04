@@ -14,6 +14,7 @@ public class Goal : MonoBehaviour
        gameManager = GameManager.GetInstance();
 
        keysRequired = 3;
+       SSTools.ShowMessage("Get Keys & Reach the Goal",SSTools.Position.top,SSTools.Time.threeSecond);
        
     }
 
@@ -24,10 +25,15 @@ public class Goal : MonoBehaviour
         {
             //toolBoxManager.keys = 0; //restart key count
             print("DOOR UNLOCK");
-            //SSTools.ShowMessage("GameOver",SSTools.Position.top,SSTools.Time.threeSecond);
+            SSTools.ShowMessage("GameOver",SSTools.Position.top,SSTools.Time.threeSecond);
+        }
+        else
+        {
+            SSTools.ShowMessage((keysRequired - gameManager.keys) + "KEYS missing!! ",SSTools.Position.top,SSTools.Time.threeSecond);
+
         }
 
-        
+
     }
     
     
