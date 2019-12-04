@@ -151,11 +151,12 @@ public class CharacterMovement : MonoBehaviour
                 print("StateG " + characterState);
             }
 
-
+//characterState = GravityState.Flying;
             //  Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.yellow);
         }
         else
         {
+            
             //  Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 1000, Color.white);
         }
     }

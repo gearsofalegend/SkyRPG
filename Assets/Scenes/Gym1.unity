@@ -3607,7 +3607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canon:
   - {fileID: 1073671006}
-  - {fileID: 0}
+  - {fileID: 1825805296}
   - {fileID: 0}
 --- !u!1 &1144031932
 GameObject:
@@ -4558,6 +4558,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1825805296 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7693834425008012308, guid: 7564828915da9864694df02663ca6b7c,
+    type: 3}
+  m_PrefabInstance: {fileID: 602034844}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee068a3c0497e745a7f34ebfe28b11f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1853782116
 GameObject:
   m_ObjectHideFlags: 0

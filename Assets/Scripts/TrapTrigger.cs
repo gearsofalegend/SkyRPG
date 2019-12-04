@@ -9,21 +9,24 @@ public class TrapTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        canon = GameObject.FindObjectsOfType<Canon>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+//    // Update is called once per frame
+//    void Update()
+//    {
+//        if (Input.GetKeyDown(KeyCode.T))
+//        {
+//            a();//TODO DEBUG
+//        }
+//    }
 
     private void OnTriggerEnter(Collider other)
     {
         
-        print("I GOT ENTERED");
+        //print("I GOT ENTERED");
         
-        if (other.tag == "Player" && gameObject.name == "TriggerOne")
+        if (other.tag == "Character" && gameObject.name == "TriggerOne")
         {
             //canon.isShooting = true;
 
@@ -35,4 +38,14 @@ public class TrapTrigger : MonoBehaviour
 
         }
     }
+
+//    void a()
+//    {
+//        print("TriggerWorks");
+//        foreach (var c in canon)
+//        {
+//            c.isShooting = true;
+//        }
+//        
+//    }
 }
