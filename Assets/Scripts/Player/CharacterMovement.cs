@@ -177,7 +177,7 @@ public class CharacterMovement : MonoBehaviour
     void Animations()
     {
         ///ANIMATIONS
-        if (Input.GetKeyDown(KeyCode.N))
+        if (Input.GetButtonDown("Sword"))
         {
             animator.SetTrigger("swordStrike");
             swordCollider.enabled = true;

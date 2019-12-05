@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnergyBallShooting : MonoBehaviour
 {
-    public KeyCode fireKey;
+    //public KeyCode fireKey;
     public GameObject energyBlast;
 
     // Start is called before the first frame update
@@ -35,19 +35,19 @@ public class EnergyBallShooting : MonoBehaviour
 
     void FireEnergyMethod()//TODO cooldown
     {
-        if (Input.GetKeyDown(fireKey)) 
+        if (Input.GetButtonDown("Fire1")) 
         {
             temp = Instantiate(energyBlast, transform.position, transform.rotation);
             temp.GetComponent<SphereCollider>().enabled = false;
         }
 
-        if (Input.GetKey(fireKey) && temp)
+        if (Input.GetButton("Fire1") && temp)
         {
             temp.transform.position = transform.position;
             temp.transform.rotation = transform.rotation;
         }
 
-        if (Input.GetKeyUp(fireKey) && temp)
+        if (Input.GetButtonUp("Fire1") && temp)
         {
             temp.GetComponent<SphereCollider>().enabled = true;
             temp.GetComponent<EnergyBlast>().isMoving = true;
