@@ -11700,6 +11700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5f1903344b3e9d4ca4d6d2ba3170c58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dashSpeed: 5
   speed: 10
 --- !u!1 &4421813495850969299
 GameObject:

@@ -9,6 +9,8 @@ public class CharacterMovement : MonoBehaviour
     private Animator animator;
     private MeshCollider swordCollider; //for swordStrike collider (damage)
 
+    public float dashSpeed;
+
     enum GravityState
     {
         Ground,
@@ -48,7 +50,7 @@ public class CharacterMovement : MonoBehaviour
         CharMove();
         //Jump();
         //GetDirectionInput();
-        //Dash();
+        Dash();
 
         animator.SetFloat("Jog", verticalAxis);
 
@@ -221,6 +223,21 @@ public class CharacterMovement : MonoBehaviour
             
         }
 
+      
 
     }
+
+
+
+
+
+    void Dash()
+    {
+        if (Input.GetButtonDown("Dash"))
+        {
+            rb.AddRelativeForce(Vector3.forward * dashSpeed, ForceMode.Impulse);
+        }
+
+    }
+
 }
