@@ -50,6 +50,8 @@ public class CharacterMovement : MonoBehaviour
         //GetDirectionInput();
         //Dash();
 
+        animator.SetFloat("Jog", verticalAxis);
+
         Animations();
         characterStateMethod();
     }
@@ -57,13 +59,15 @@ public class CharacterMovement : MonoBehaviour
     void CharMove()
     {
         //horizontalAxis =Input.GetAxisRaw("Horizontal"); //this variable collects the value of the button pressed (1,0, or -1)
-        verticalAxis = Input.GetAxisRaw("Vertical");
+        verticalAxis = Input.GetAxis("Vertical");
 
 
         Vector3 verticalMovement = transform.forward * verticalAxis;
         //Vector3 moveSide = transform.right * horizontalAxis;
 
         gameObject.transform.position += verticalMovement * Time.deltaTime * speed;
+
+
     }
 
 //    void Jump()
@@ -140,7 +144,10 @@ public class CharacterMovement : MonoBehaviour
                 //canJump = false;
                 characterState = GravityState.Flying;
                 print("StateG " + characterState);
+
             }
+                print("distance " + hit.distance);
+            print("I am touching " + hit.ToString());
 
 
             //will check the hit distance and verify if we can jump or not 
@@ -151,13 +158,19 @@ public class CharacterMovement : MonoBehaviour
                 print("StateG " + characterState);
             }
 
-//characterState = GravityState.Flying;
-            //  Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.yellow);
+            else if (hit.collider == null)
+            {
+                characterState = GravityState.Flying;
+                print("StateG " + characterState);
+
+            }
+            //characterState = GravityState.Flying;
+              Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.yellow);
         }
         else
         {
             
-            //  Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 1000, Color.white);
+              Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 0, Color.white);
         }
     }
 
@@ -173,6 +186,7 @@ public class CharacterMovement : MonoBehaviour
             swordCollider.enabled = false;
         }
 
+        /*
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
             animator.SetBool("run", true);
@@ -180,9 +194,9 @@ public class CharacterMovement : MonoBehaviour
         else
         {
             animator.SetBool("run", false);
-        }
+        }*/
 
-        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+        /*if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
             
             animator.SetBool("walkBool",true);
@@ -191,17 +205,10 @@ public class CharacterMovement : MonoBehaviour
         else
         {
             animator.SetBool("walkBool", false);
-        }
+        }*/
 
-//
-//        if (characterState == GravityState.Flying )
-//        {
-//            animator.SetBool("flyForward", true);
-//        }
-//        else if(characterState == GravityState.Ground)
-//        {
-//            animator.SetBool("flyForward", false);
-//        }
+
+     
 
         switch (characterState)
         {
