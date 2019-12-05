@@ -6,29 +6,22 @@ public class EnergyBallShooting : MonoBehaviour
 {
     //public KeyCode fireKey;
     public GameObject energyBlast;
+    public Transform energyGeneratorTransform;
+    private Animator animator;// for shooting animation
 
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-//        float moveX = Input.GetAxis("Horizontal");
-//        float moveY = Input.GetAxis("Vertical");
-
-      //  MoveCube(moveX, moveY, Time.deltaTime * 35.0f);
 
         FireEnergyMethod();
     }
 
-
-//    void MoveCube(float x, float z, float speed = 5.0f)
-//    {
-//        //
-//        transform.Translate(new Vector3(x * speed, 0, z * speed));
-//    }
 
 
     GameObject temp;
@@ -37,18 +30,22 @@ public class EnergyBallShooting : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1")) 
         {
-            temp = Instantiate(energyBlast, transform.position, transform.rotation);
+            animator.SetBool("aim", true);
+            
+            temp = Instantiate(energyBlast, energyGeneratorTransform.position,energyGeneratorTransform.rotation);
             temp.GetComponent<SphereCollider>().enabled = false;
         }
 
         if (Input.GetButton("Fire1") && temp)
         {
-            temp.transform.position = transform.position;
+            temp.transform.position = energyGeneratorTransform.transform.position;
             temp.transform.rotation = transform.rotation;
         }
 
         if (Input.GetButtonUp("Fire1") && temp)
         {
+            animator.SetBool("aim", false);
+            
             temp.GetComponent<SphereCollider>().enabled = true;
             temp.GetComponent<EnergyBlast>().isMoving = true;
 

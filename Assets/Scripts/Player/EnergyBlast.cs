@@ -15,7 +15,7 @@ public class EnergyBlast : MonoBehaviour
         if (isMoving)
         {
 
-            transform.position += transform.TransformDirection(Vector3.forward);
+            transform.position += transform.TransformDirection(Vector3.forward);//TODO for fixing shooting direction
 
         }
 
