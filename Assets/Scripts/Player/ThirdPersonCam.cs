@@ -18,6 +18,7 @@ public class ThirdPersonCam : MonoBehaviour
     void LateUpdate()
     {
         CamControl();
+        RotateCamera();
     }
 
     void CamControl()
@@ -36,6 +37,14 @@ public class ThirdPersonCam : MonoBehaviour
         {
             Target.rotation = Quaternion.Euler(mouseY, mouseX, 0);
             Player.rotation = Quaternion.Euler(0, mouseX, 0);
+        }
+    }
+
+    void RotateCamera()
+    {
+        if (Input.GetButtonDown("RotCam"))
+        {
+            Player.rotation = Quaternion.Euler(0, 90, 0);
         }
     }
 }
