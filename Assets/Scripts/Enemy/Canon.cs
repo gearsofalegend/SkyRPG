@@ -45,7 +45,7 @@ public class Canon : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "EnergyBall")
+        if (other.tag == "EnergyBall"|| other.tag == "SkySword")
         {
 
             cannonHealth--;

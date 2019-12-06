@@ -7,6 +7,7 @@ public class Missile : MonoBehaviour
 {
     private GameObject player;
     public float missileSpeed;
+    public GameObject burstExplosion;
 
     // Start is called before the first frame update
     void Start()
@@ -28,13 +29,16 @@ public class Missile : MonoBehaviour
         transform.position += directionToPlayer * Time.deltaTime * missileSpeed;
     }
     
-    void OnCollisionEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     {
         
-        if (other.gameObject.tag == "EnergyBall")
-        {
+       // print("Sean Strike");
+//        if (other.gameObject.tag == "EnergyBall")
+//        { 
+            
+            Destroy(Instantiate(burstExplosion, transform.position, transform.rotation),1.5f);
             Destroy(gameObject);
-        }
+       // }
     }
     
 }
