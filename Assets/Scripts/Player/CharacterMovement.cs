@@ -145,11 +145,9 @@ public class CharacterMovement : MonoBehaviour
             {
                 //canJump = false;
                 characterState = GravityState.Flying;
-                print("StateG " + characterState);
+                print("State " + characterState);
 
             }
-                print("distance " + hit.distance);
-                print("I am touching " + hit.ToString());
 
 
             //will check the hit distance and verify if we can jump or not 
@@ -157,24 +155,21 @@ public class CharacterMovement : MonoBehaviour
             {
                 //canJump = true;
                 characterState = GravityState.Ground;
-                print("StateG " + characterState);
+                print("State " + characterState);
             }
 
-           /* else if (hit.collider == null)
-            {
-                characterState = GravityState.Flying;
-                print("StateG " + characterState);
-
-            }
-            //characterState = GravityState.Flying;
-            */
-              Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.yellow);
+         
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.yellow);
+             
         }
         else
         {
-            
-              Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 0, Color.white);
+
+            characterState = GravityState.Flying;
+      
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.white);
         }
+       // print("distance "+ hit.distance);
     }
 
     void Animations()

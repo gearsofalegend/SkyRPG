@@ -6,16 +6,17 @@ using UnityEngine;
 
 public class GuideArrow : MonoBehaviour
 {
-    //private Crate[] crates;
+    
     private Dictionary<float, Crate> crateDictionary;
     private Transform characterTransform;
     private Transform nearbyCrateTransform;
-    private bool isEnabled = false;
+    
+    public MeshRenderer[] arrowMeshRenderers;// what render the object in scene
+    private bool isVisible;
     
     // Start is called before the first frame update
     void Start()
     {
-        //crates = GameObject.FindObjectsOfType<Crate>();
         crateDictionary = new Dictionary<float, Crate>();
         
         
@@ -24,6 +25,9 @@ public class GuideArrow : MonoBehaviour
         nearbyCrateTransform = GetNearbyCrate();
         
         InvokeRepeating("assignNearby",0,0.1f);
+
+      
+
     }
 
     // Update is called once per frame
@@ -32,24 +36,12 @@ public class GuideArrow : MonoBehaviour
 
         
             transform.LookAt(nearbyCrateTransform);
-          //  transform.position = characterTransform.position + (Vector3.up * 5);
+            HideArrowMethod();
+            //transform.position = characterTransform.GetChild(0).position;//ArrowAnchor GameObject
         
       
 
-        if (Input.GetKeyDown(KeyCode.H) && !isEnabled )
-        {
-            gameObject.SetActive(true);
-            isEnabled = true;
-
-
-
-        }
-        if (Input.GetKeyDown(KeyCode.H) && isEnabled)
-        {
-            gameObject.SetActive(false);
-            isEnabled = false;
-        }
-
+      
     }
 
 
@@ -62,7 +54,7 @@ public class GuideArrow : MonoBehaviour
       // crateDictionary = new Dictionary<float, Crate>();
 
         // getCrates GameObject
-        Crate[] crates = GameObject.FindObjectsOfType<Crate>();
+        Crate[] crates = FindObjectsOfType<Crate>();
         
         
         foreach (var crate in crates)
@@ -104,8 +96,36 @@ public class GuideArrow : MonoBehaviour
         nearbyCrateTransform = GetNearbyCrate();
     }
 
-//    private void LateUpdate()
-//    {
-//        //GetNearbyCrate();
-//    }
+ 
+
+    void HideArrowMethod() //things learned: use else if instead for enabling and disabling
+    {
+        
+        if (Input.GetKeyDown(KeyCode.H) && isVisible)
+        {
+
+            print("what up's");
+            foreach (var singleArrowRenderer in arrowMeshRenderers)
+            {
+                singleArrowRenderer.enabled = false;
+            }
+
+            isVisible = false;            
+
+        }else if (Input.GetKeyDown(KeyCode.H) && !isVisible)
+        
+        {
+
+            foreach (var singleArrowRenderer in arrowMeshRenderers)
+            {
+                singleArrowRenderer.enabled = true;
+                print("Info "+ singleArrowRenderer.enabled);
+            }
+
+            isVisible = true;
+
+        }
+    }
+
+
 }

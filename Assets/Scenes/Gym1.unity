@@ -5669,6 +5669,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ba17b44dac311442abf547bfef03e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arrowMeshRenderers:
+  - {fileID: 19364897}
+  - {fileID: 562743944}
 --- !u!1 &1553437401
 GameObject:
   m_ObjectHideFlags: 0
@@ -13740,7 +13743,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.52
   m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!114 &4421813495850969297
 MonoBehaviour:
