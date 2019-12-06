@@ -38,7 +38,7 @@ public class Canon : MonoBehaviour
         GameObject temp;
 
         temp = Instantiate(missilePrefab, missileSpawn.position, missileSpawn.rotation);
-        Destroy(temp, 15f);
+        //Destroy(temp, 15f); //TODO removed missile time limit to destroy
         
         
     }
@@ -52,9 +52,8 @@ public class Canon : MonoBehaviour
             if (cannonHealth == 0)
             {
                 GameObject temp = Instantiate(explosion, transform.position, transform.rotation);
-                Destroy(this.gameObject);
                 Destroy(temp,3f);
-                
+                Destroy(this.gameObject);
       
             }
 

@@ -139,7 +139,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missileSpeed: 5
-  burstExplosion: {fileID: 0}
+  burstExplosion: {fileID: 6827265633991665567, guid: d9d3aaa9fcd7ce340a99638cce720b99,
+    type: 3}
 --- !u!1 &2656053273721693922
 GameObject:
   m_ObjectHideFlags: 0

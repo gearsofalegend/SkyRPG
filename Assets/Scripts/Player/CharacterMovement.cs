@@ -149,7 +149,7 @@ public class CharacterMovement : MonoBehaviour
 
             }
                 print("distance " + hit.distance);
-            print("I am touching " + hit.ToString());
+                print("I am touching " + hit.ToString());
 
 
             //will check the hit distance and verify if we can jump or not 
@@ -160,13 +160,14 @@ public class CharacterMovement : MonoBehaviour
                 print("StateG " + characterState);
             }
 
-            else if (hit.collider == null)
+           /* else if (hit.collider == null)
             {
                 characterState = GravityState.Flying;
                 print("StateG " + characterState);
 
             }
             //characterState = GravityState.Flying;
+            */
               Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.yellow);
         }
         else
@@ -183,34 +184,12 @@ public class CharacterMovement : MonoBehaviour
         {
             animator.SetTrigger("swordStrike");
             swordCollider.enabled = true;
+            
         }else if (animator.GetCurrentAnimatorStateInfo(0).IsName("SwordStrike") )
         {
             swordCollider.enabled = false;
         }
 
-        /*
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
-        {
-            animator.SetBool("run", true);
-        }
-        else
-        {
-            animator.SetBool("run", false);
-        }*/
-
-        /*if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
-        {
-            
-            animator.SetBool("walkBool",true);
-            
-        }
-        else
-        {
-            animator.SetBool("walkBool", false);
-        }*/
-
-
-     
 
         switch (characterState)
         {
@@ -221,13 +200,9 @@ public class CharacterMovement : MonoBehaviour
                 animator.SetBool("flyForward", false);
                 break;
             
-        }
-
-      
+        }   
 
     }
-
-
 
 
 

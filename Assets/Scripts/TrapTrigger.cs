@@ -51,7 +51,9 @@ public class TrapTrigger : MonoBehaviour
 
             foreach (var singleCanonSpawn in canonSpawns)
             {
-                Instantiate(canonPrefab, singleCanonSpawn.transform.position, singleCanonSpawn.transform.rotation);
+                GameObject temp = Instantiate(canonPrefab, singleCanonSpawn.transform.position, singleCanonSpawn.transform.rotation);
+
+                temp.GetComponent<Canon>().isShooting = true;
             }
         }
     }
