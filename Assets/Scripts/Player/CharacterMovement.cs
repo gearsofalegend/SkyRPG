@@ -200,7 +200,20 @@ public class CharacterMovement : MonoBehaviour
                 animator.SetBool("flyForward", false);
                 break;
             
-        }   
+        }
+        
+//
+//        if (Input.GetKeyDown(KeyCode.U))
+//        {
+//            animator.Play("special");
+//        }
+//
+////        if (Input.GetKeyUp(KeyCode.U))
+////        {
+////
+////            animator.enabled = false;
+////        }
+        
 
     }
 
