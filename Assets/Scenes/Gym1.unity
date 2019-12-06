@@ -4451,18 +4451,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!114 &1073671006 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7693834425008012308, guid: 7564828915da9864694df02663ca6b7c,
-    type: 3}
-  m_PrefabInstance: {fileID: 7693834425300735818}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee068a3c0497e745a7f34ebfe28b11f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1119119885
 GameObject:
   m_ObjectHideFlags: 0
@@ -4568,10 +4556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e105cc49909cd843bb21860e86f491b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canon:
-  - {fileID: 1073671006}
-  - {fileID: 1825805296}
-  - {fileID: 0}
+  canonPrefab: {fileID: 0}
 --- !u!43 &1130508474
 Mesh:
   m_ObjectHideFlags: 0
@@ -6242,18 +6227,6 @@ PrefabInstance:
       objectReference: {fileID: 2144731969}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2f4d3b27cbcbca4eb5ec9bcc060f16c, type: 3}
---- !u!114 &1825805296 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7693834425008012308, guid: 7564828915da9864694df02663ca6b7c,
-    type: 3}
-  m_PrefabInstance: {fileID: 602034844}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dee068a3c0497e745a7f34ebfe28b11f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1853782116
 GameObject:
   m_ObjectHideFlags: 0
@@ -6359,7 +6332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e105cc49909cd843bb21860e86f491b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canon: []
+  canonPrefab: {fileID: 0}
 --- !u!1 &1899720505
 GameObject:
   m_ObjectHideFlags: 0
@@ -6658,12 +6631,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978629462}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e105cc49909cd843bb21860e86f491b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canon: []
+  canonPrefab: {fileID: 7693834425008012311, guid: 7564828915da9864694df02663ca6b7c,
+    type: 3}
 --- !u!1001 &2067397986
 PrefabInstance:
   m_ObjectHideFlags: 0

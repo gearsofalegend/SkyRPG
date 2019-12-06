@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class TrapTrigger : MonoBehaviour
 {
-    public Canon[] canon;
+    private Canon[] canon;
+    private GameObject[] canonSpawns;
+    public GameObject canonPrefab;
+    
     
     // Start is called before the first frame update
     void Start()
     {
         canon = GameObject.FindObjectsOfType<Canon>();
+
+        canonSpawns = GameObject.FindGameObjectsWithTag("CanonSpawn");
     }
 
 //    // Update is called once per frame
@@ -28,7 +33,7 @@ public class TrapTrigger : MonoBehaviour
         
         if (other.tag == "Character" && gameObject.name == "TriggerOne")
         {
-            //canon.isShooting = true;
+        
 
             print("TriggerWorks");
             foreach (var c in canon)
@@ -36,6 +41,18 @@ public class TrapTrigger : MonoBehaviour
                 c.isShooting = true;
             }
 
+        }
+        
+        
+        if (other.tag == "Character" && gameObject.name == "TriggerThree")
+        {
+            
+            print("TriggerThree");
+
+            foreach (var singleCanonSpawn in canonSpawns)
+            {
+                Instantiate(canonPrefab, singleCanonSpawn.transform.position, singleCanonSpawn.transform.rotation);
+            }
         }
     }
 
