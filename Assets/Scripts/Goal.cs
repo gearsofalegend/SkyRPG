@@ -27,7 +27,7 @@ public class Goal : MonoBehaviour
             print("DOOR UNLOCK");
             SSTools.ShowMessage("GameOver",SSTools.Position.top,SSTools.Time.threeSecond);
         }
-        else
+        else if(other.tag == "Character")
         {
             SSTools.ShowMessage((keysRequired - gameManager.keys) + "KEYS missing!! ",SSTools.Position.top,SSTools.Time.threeSecond);
 
