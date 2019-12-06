@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Killing : MonoBehaviour
 {
-    public GameObject Player;
+    //public GameObject Player;
+    public Transform Checkpoint;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (Checkpoint == null)
+        {
+            Destroy(this);
+        }
     }
 
     // Update is called once per frame
@@ -22,7 +26,8 @@ public class Killing : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            Destroy(other.gameObject);
+            other.gameObject.transform.position = Checkpoint.transform.position;
+            //Destroy(other.gameObject);
         }
     }
 }
