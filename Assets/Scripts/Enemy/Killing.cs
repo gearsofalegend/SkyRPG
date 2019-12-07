@@ -24,7 +24,7 @@ public class Killing : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject.tag == "Character")
         {
             other.gameObject.transform.position = Checkpoint.transform.position;
             //Destroy(other.gameObject);

@@ -223,8 +223,8 @@ public class CharacterMovement : MonoBehaviour
     {
         if (Input.GetButton("Dash"))
         {
-            //rb.AddRelativeForce(-direction * -dashSpeed, ForceMode.Impulse);
-            rb.AddRelativeForce(transform.forward * dashSpeed, ForceMode.Impulse); //Original
+            rb.AddForce(-direction * -dashSpeed, ForceMode.Impulse);
+            //rb.AddRelativeForce(transform.forward * dashSpeed, ForceMode.Impulse); //Original
         }
         else
         {
