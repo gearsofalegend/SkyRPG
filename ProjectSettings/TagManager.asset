@@ -12,6 +12,7 @@ TagManager:
   - Crate
   - RedEnergyBall
   - EnergyGenerator
+  - CanonSpawn
   layers:
   - Default
   - TransparentFX
