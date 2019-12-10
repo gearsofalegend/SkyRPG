@@ -12,7 +12,14 @@ public class TestScriptMovement : MonoBehaviour
 
     private Vector3 lastPosition; //will be using this for rotation...
 
-    public float dashSpeed;
+    private float rightStickHorizontal, rightStickVertical;
+    private float leftStickHorizontal, leftStickVertical;
+
+    public bool isStrafing;
+
+    public GameObject camera;
+    
+    
 
     enum GravityState
     {
@@ -22,17 +29,13 @@ public class TestScriptMovement : MonoBehaviour
 
     private GravityState characterState;
 
-    private float horizontalStrafeAxis,
-        verticalStrafeAxis,
-        zMovementAxis,
-        rotationAxis;
-
-
+    
     public int speed;
-    public Vector3 direction;
+    public Vector3 directionJoyStick;
 
 
     private Rigidbody rb;
+    private Vector3 offset;
 
 
     // Start is called before the first frame update
@@ -43,7 +46,7 @@ public class TestScriptMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         swordCollider = GameObject.FindWithTag("SkySword").GetComponent<MeshCollider>();
 
-        lastPosition = transform.position;//a test ...
+        offset = camera.transform.position - transform.position;
     }
 
     // Update is called once per frame
@@ -53,7 +56,7 @@ public class TestScriptMovement : MonoBehaviour
    
         Dash();
 
-        animator.SetFloat("Jog", verticalStrafeAxis);
+        animator.SetFloat("Jog", rightStickVertical);
 
         Animations();
         characterStateMethod();
@@ -66,23 +69,47 @@ public class TestScriptMovement : MonoBehaviour
     
     void CharacterMove()
     {
-        horizontalStrafeAxis = Input.GetAxis("Horizontal"); //this variable collects the value of the button pressed (1,0, or -1)
-        verticalStrafeAxis = Input.GetAxis("Vertical");
+        rightStickHorizontal = Input.GetAxis("RightStickXAxis");
+        rightStickVertical = Input.GetAxis("RightStickYAxis");
+ 
+        leftStickHorizontal = Input.GetAxis("Horizontal"); //this variable collects the value of the button pressed (1,0, or -1)
+        leftStickVertical = Input.GetAxis("Vertical");
 
-        rotationAxisPositive = Input.GetKey(KeyCode.Keypad6);
-        rotationAxisNegative = Input.GetKey(KeyCode.Keypad4);
 
-        zMovementAxisPositive = Input.GetKey(KeyCode.Q);
-        zMovementNegative = Input.GetKey(KeyCode.E);
+        if (isStrafing)
+        {
+            directionJoyStick = new Vector3(leftStickHorizontal,leftStickVertical,rightStickVertical);
+            transform.position += transform.TransformDirection( directionJoyStick * Time.deltaTime * speed);// takes account character "LOCAL POSITION" 
+            transform.Rotate(Vector3.up, rightStickHorizontal, Space.Self);//TODO important method 
 
-        rotationAxis = rotationAxisPositive? (rotationAxisNegative? (0) : (1) ) : (rotationAxisNegative? (-1) : (0) );
+            
+        }
+        else
+        { 
+           
+            
+            directionJoyStick = new Vector3(camera.transform.TransformDirection(camera.transform.right).x * leftStickHorizontal,0,camera.transform.TransformDirection(camera.transform.forward).z * leftStickVertical);
+            
+            if ( leftStickHorizontal != 0 || leftStickVertical != 0)//to avoid returning to zero in rotation
+            {
+                transform.rotation = Quaternion.LookRotation(directionJoyStick); //can be used with slerp for smoothing result
+            }
+
+            
+            
+          // transform.position+= directionJoyStick.normalized * Time.deltaTime * speed;
+            transform.position += transform.TransformDirection(directionJoyStick.normalized * Time.deltaTime * speed);
+
+
+        }
+
+
+
+/*
+
         
-        zMovementAxis = zMovementAxisPositive? (zMovementNegative? (0) : (1) ) : (zMovementNegative? (-1) : (0) );
-
-        direction = new Vector3(horizontalStrafeAxis,verticalStrafeAxis, zMovementAxis) ;
-
-        //Vector3 difference = ;
-        //Quaternion temp = Quaternion.LookRotation((transform.position - lastPosition),Vector3.right);
+       // directionJoyStick = new Vector3(rightStickHorizontal,0,rightStickVertical);
+        
 
         /*if (horizontalAxis != 0 || verticalAxis != 0)
         {
@@ -95,19 +122,25 @@ public class TestScriptMovement : MonoBehaviour
         transform.position += direction;*/
 
 
-        //lastPosition = transform.position;//update last position
-
         
         //rb.position+= transform.TransformDirection(direction * Time.deltaTime * speed);
         //Enable this line once the fix is done for the physic / animator component
         //rb.MovePosition(transform.position + transform.TransformDirection(direction * Time.deltaTime * speed));
-
-        transform.position += transform.TransformDirection(direction * Time.deltaTime * speed);
-        transform.Rotate(Vector3.up, rotationAxis, Space.Self);
-
+        
+  // transform.Rotate(Vector3.up, rotationAxis, Space.Self);
     }
 
+    private void LateUpdate()
+    {
+        if (!isStrafing)
+        {
+            offset = Quaternion.AngleAxis (rightStickHorizontal * 2, Vector3.up) * offset;
+            camera.transform.position = transform.position + offset;
+            camera.transform.LookAt(transform.position);
+            //camera.transform.RotateAround(transform.position-offset,Vector3.up, rightStickHorizontal);
 
+        }
+    }
 
 
     void characterStateMethod()
