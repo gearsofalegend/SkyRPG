@@ -36,7 +36,7 @@ public class ThirdPersonCam : MonoBehaviour
         else
         {
             Target.rotation = Quaternion.Euler(mouseY, mouseX, 0);
-            Player.rotation = Quaternion.Euler(0, mouseX, 0);
+            //Player.rotation = Quaternion.Euler(0, mouseX, 0);
         }
     }
 
@@ -44,7 +44,7 @@ public class ThirdPersonCam : MonoBehaviour
     {
         if (Input.GetButtonDown("RotCam"))
         {
-            Player.rotation = Quaternion.Euler(0, 90, 0);
+           // Player.rotation = Quaternion.Euler(0, 90, 0);
         }
     }
 }

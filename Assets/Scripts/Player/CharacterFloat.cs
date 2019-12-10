@@ -11,7 +11,7 @@ public class CharacterFloat : MonoBehaviour
     public float pop;
     //public float spin;// extra cool points
 
-    private Vector3 rotation;
+   // private Vector3 rotation;
 
     private bool isLocked;
 
